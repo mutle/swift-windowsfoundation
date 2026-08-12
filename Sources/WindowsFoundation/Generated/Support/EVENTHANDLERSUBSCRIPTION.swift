@@ -1,3 +1,4 @@
+#if os(Windows)
 import Foundation
 import WinSDK
 import CWinRT
@@ -37,3 +38,4 @@ struct EventHandlerSubscriptions<Handler> {
       return result
     }
 }
+#endif

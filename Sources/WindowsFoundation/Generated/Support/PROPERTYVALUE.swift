@@ -1,3 +1,4 @@
+#if os(Windows)
 import Foundation
 import CWinRT
 import WinSDK
@@ -140,3 +141,4 @@ extension PropertyValue
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(Windows)
 // Copyright © 2021 Saleem Abdulrasool <compnerd@compnerd.org>
 // SPDX-License-Identifier: BSD-3
 
@@ -172,3 +173,4 @@ public struct Error : Swift.Error, CustomStringConvertible {
 public func failWith(err: HRESULT) -> HRESULT {
   return err
 }
+#endif

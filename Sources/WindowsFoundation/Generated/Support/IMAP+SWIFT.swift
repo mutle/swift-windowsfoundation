@@ -1,3 +1,4 @@
+#if os(Windows)
 // Swift Dictionary-like extensions to IMap[View]
 extension IMap {
     public typealias Key = K
@@ -56,3 +57,4 @@ extension IMapView {
         get { hasKey(key) ? lookup(key) : defaultValue() }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(Windows)
 // Copyright © 2021 Saleem Abdulrasool <compnerd@compnerd.org>
 // SPDX-License-Identifier: BSD-3
 
@@ -13,3 +14,4 @@ public func CHECKED(_ body: () -> HRESULT) throws {
 public func CHECKED(_ body: @autoclosure () -> HRESULT) throws {
   try CHECKED(body)
 }
+#endif

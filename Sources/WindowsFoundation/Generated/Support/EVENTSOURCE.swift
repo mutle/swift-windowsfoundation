@@ -1,3 +1,4 @@
+#if os(Windows)
 import Foundation
 import WinSDK
 import CWinRT
@@ -31,3 +32,4 @@ extension CWinRT.EventRegistrationToken: @retroactive Hashable {
         hasher.combine(value)
     }
 }
+#endif

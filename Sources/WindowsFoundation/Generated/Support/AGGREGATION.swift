@@ -1,3 +1,4 @@
+#if os(Windows)
 import CWinRT
 import Foundation
 
@@ -126,3 +127,4 @@ public extension ComposableImpl {
         return nil
     }
 }
+#endif

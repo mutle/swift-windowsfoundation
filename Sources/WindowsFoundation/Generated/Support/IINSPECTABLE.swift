@@ -1,3 +1,4 @@
+#if os(Windows)
 // Copyright © 2021 Saleem Abdulrasool <compnerd@compnerd.org>
 // SPDX-License-Identifier: BSD-3
 
@@ -139,3 +140,4 @@ extension ComposableImpl where CABI == C_IInspectable {
     return .init(lpVtbl: vtblPtr)
   }
 }
+#endif

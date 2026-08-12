@@ -1,3 +1,4 @@
+#if os(Windows)
 // Copyright © 2021 Saleem Abdulrasool <compnerd@compnerd.org>
 // SPDX-License-Identifier: BSD-3
 
@@ -16,3 +17,4 @@ extension TrustLevel {
     TrustLevel(rawValue: 2)
   }
 }
+#endif

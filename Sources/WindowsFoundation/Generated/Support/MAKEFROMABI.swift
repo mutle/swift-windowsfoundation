@@ -1,3 +1,4 @@
+#if os(Windows)
 import Foundation
 
 // Not strongly typed, we lose the type safety of the associatedtype anyways
@@ -29,3 +30,4 @@ func make<T:AnyObject>(type: T.Type, from abi: WindowsFoundation.IInspectable) -
     let classString = NSStringFromClass(type).split(separator: ".", maxSplits: 2)
     return make(typeName: SwiftTypeName(module: String(classString[0]), typeName: String(classString[1])), from: abi) as? T
 }
+#endif

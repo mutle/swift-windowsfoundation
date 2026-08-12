@@ -1,3 +1,4 @@
+#if os(Windows)
 // Copyright © 2021 Saleem Abdulrasool <compnerd@compnerd.org>
 // SPDX-License-Identifier: BSD-3
 
@@ -45,3 +46,4 @@ final public class HString {
   }
 }
 
+#endif

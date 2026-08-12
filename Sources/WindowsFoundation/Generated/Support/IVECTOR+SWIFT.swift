@@ -1,3 +1,4 @@
+#if os(Windows)
 // Default Swift Collection protocol implementation for IVector
 public extension IVector {
     var startIndex: Int { 0 }
@@ -41,3 +42,4 @@ public extension IVectorView {
         return Int(index)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(Windows)
 import CWinRT
 
 internal let IID_IMarshal: IID = IID(Data1: 0x01000300, Data2: 0x0000, Data3: 0x0000, Data4: (0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x46)) // 01000300-0000-0000-C000-00000046
@@ -134,3 +135,4 @@ private class Marshaler {
         return marshaler.pointee.lpVtbl.pointee.DisconnectObject(marshaler, dwReserved)
     }
 }
+#endif
