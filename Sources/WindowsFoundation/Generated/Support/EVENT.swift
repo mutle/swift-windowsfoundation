@@ -1,3 +1,4 @@
+#if os(Windows)
 import WinSDK
 import CWinRT
 
@@ -42,3 +43,4 @@ extension CWinRT.EventRegistrationToken {
     return swift.token
   }
 }
+#endif

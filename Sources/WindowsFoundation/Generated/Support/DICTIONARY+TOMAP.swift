@@ -1,3 +1,4 @@
+#if os(Windows)
 import WinSDK
 
 // Swift Dictionary to IMap Adaptor
@@ -56,3 +57,4 @@ internal class DictionaryMapView<K, V> : IMapView where K : Hashable {
 extension DictionaryMapView {
     public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? { nil }
 }
+#endif

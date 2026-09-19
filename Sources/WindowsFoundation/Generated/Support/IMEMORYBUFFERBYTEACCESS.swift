@@ -1,3 +1,4 @@
+#if os(Windows)
 import CWinRT
 import Foundation
 
@@ -72,3 +73,4 @@ extension __ABI_.IMemoryBufferByteAccessWrapper {
         return S_OK
     }
 }
+#endif

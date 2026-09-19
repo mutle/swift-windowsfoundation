@@ -1,3 +1,4 @@
+#if os(Windows)
 // Copyright © 2021 Saleem Abdulrasool <compnerd@compnerd.org>
 // SPDX-License-Identifier: BSD-3
 
@@ -34,3 +35,4 @@ private var IID_IAgileObject: WindowsFoundation.IID {
 public final class IAgileObject : IUnknown {
     override public class var IID: WindowsFoundation.IID { IID_IAgileObject }
 }
+#endif

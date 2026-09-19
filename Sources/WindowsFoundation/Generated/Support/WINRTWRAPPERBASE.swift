@@ -1,3 +1,4 @@
+#if os(Windows)
 import CWinRT
 import WinSDK
 
@@ -253,3 +254,4 @@ public class ReferenceWrapperBase<I: ReferenceBridge>: WinRTAbiBridgeWrapper<I> 
         tryUnwrapFromBase(raw: pUnk)
     }
 }
+#endif

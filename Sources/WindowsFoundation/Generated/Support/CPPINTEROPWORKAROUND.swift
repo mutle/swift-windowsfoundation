@@ -1,3 +1,4 @@
+#if os(Windows)
 import CWinRT
 
 #if true // TODO(WIN-860): Remove workaround once C++ interop issues with WinSDK.GUID are fixed.
@@ -32,4 +33,5 @@ internal let RoActivateInstance = CWinRT.RoActivateInstance
 internal let RoGetActivationFactory = CWinRT.RoGetActivationFactory
 internal let StringFromGUID2 = CWinRT.StringFromGUID2
 internal let CoCreateFreeThreadedMarshaler = CWinRT.CoCreateFreeThreadedMarshaler
+#endif
 #endif

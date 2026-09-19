@@ -1,3 +1,4 @@
+#if os(Windows)
 import CWinRT
 import WinSDK
 
@@ -21,3 +22,4 @@ extension IUnknownRef {
 public func queryInterface(_ obj: WinRTClass, _ iid: WindowsFoundation.IID) -> IUnknownRef? {
     obj._inner.pUnk.queryInterface(iid)
 }
+#endif

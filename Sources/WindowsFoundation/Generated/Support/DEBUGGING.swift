@@ -1,3 +1,4 @@
+#if os(Windows)
 import WinSDK
 import Foundation
 
@@ -65,3 +66,4 @@ public class TrackedObjects {
     }
   }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(Windows)
 import Foundation
 
 actor WaitableEvent {
@@ -38,3 +39,4 @@ actor WaitableEvent {
         observer?()
     }
 }
+#endif

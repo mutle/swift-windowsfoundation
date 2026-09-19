@@ -1,3 +1,4 @@
+#if os(Windows)
 // Copyright © 2021 Saleem Abdulrasool <compnerd@compnerd.org>
 // SPDX-License-Identifier: BSD-3
 
@@ -29,3 +30,4 @@ private var IID_ISwiftImplemented: WindowsFoundation.IID {
 public final class ISwiftImplemented : IInspectable {
     override public class var IID: WindowsFoundation.IID { IID_ISwiftImplemented }
 }
+#endif

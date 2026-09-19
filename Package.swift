@@ -9,8 +9,8 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/thebrowsercompany/swift-cwinrt",
-            revision: "eb46cdb66f770a1e006f9fcfebbf9e99a0fba811"
+            url: "https://github.com/mutle/swift-cwinrt",
+            revision: "a5988c9ec83d9ae1f1a4cd83051127f625ff60f7"
         ),
     ],
     targets: [
@@ -19,6 +19,10 @@ let package = Package(
             dependencies: [
                 .product(name: "CWinRT", package: "swift-cwinrt"),
             ]
+        ),
+        .testTarget(
+            name: "WindowsFoundationTests",
+            dependencies: ["WindowsFoundation"]
         ),
     ]
 )

@@ -1,3 +1,4 @@
+#if os(Windows)
 // Copyright © 2021 Saleem Abdulrasool <compnerd@compnerd.org>
 // SPDX-License-Identifier: BSD-3
 
@@ -33,3 +34,4 @@ open class IUnknown : HasIID {
     return pUnk.pointee.lpVtbl.pointee.Release(pUnk)
   }
 }
+#endif

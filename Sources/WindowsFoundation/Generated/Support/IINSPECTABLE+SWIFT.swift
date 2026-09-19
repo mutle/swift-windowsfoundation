@@ -1,3 +1,4 @@
+#if os(Windows)
 // Copyright © 2021 Saleem Abdulrasool <compnerd@compnerd.org>
 // SPDX-License-Identifier: BSD-3
 
@@ -77,3 +78,4 @@ extension IInspectable {
     return SwiftTypeName(module: GetSwiftModule(from: String(ns)), typeName: String(typeName))
   }
 }
+#endif

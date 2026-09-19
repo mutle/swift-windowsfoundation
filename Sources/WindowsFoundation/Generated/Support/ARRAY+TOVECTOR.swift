@@ -1,3 +1,4 @@
+#if os(Windows)
 // Swift Array to IVector Adaptor
 import WinSDK
 
@@ -79,3 +80,4 @@ class ArrayIterator<T>: IIterator {
 
     func queryInterface(_ iid: IID) -> IUnknownRef? { nil }
 }
+#endif

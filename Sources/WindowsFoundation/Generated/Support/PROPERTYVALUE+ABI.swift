@@ -1,3 +1,4 @@
+#if os(Windows)
 import CWinRT
 import WinSDK
 
@@ -171,3 +172,4 @@ internal class IPropertyValueStatics: WindowsFoundation.IInspectable {
           return propertyValue
       }
   }
+#endif

@@ -1,3 +1,4 @@
+#if os(Windows)
 // Copyright © 2023 The Browser Company
 // SPDX-License-Identifier: BSD-3
 import CWinRT
@@ -124,3 +125,4 @@ public struct ComPtrs {
         return (ComPtr(takingOwnership: ptr1), ComPtr(takingOwnership: ptr2), ComPtr(takingOwnership: ptr3), ComPtr(takingOwnership: ptr4), ComPtr(takingOwnership: ptr5))
     }
 }
+#endif

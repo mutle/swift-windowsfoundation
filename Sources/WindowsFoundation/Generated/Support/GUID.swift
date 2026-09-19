@@ -1,3 +1,4 @@
+#if os(Windows)
 import Foundation
 import CWinRT
 
@@ -82,3 +83,4 @@ public extension GUID {
         )
     }
 }
+#endif
