@@ -10,7 +10,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/mutle/swift-cwinrt",
-            revision: "e9db556eb47958cd904366647b1a45c831cbc38f"
+            revision: "a5988c9ec83d9ae1f1a4cd83051127f625ff60f7"
         ),
     ],
     targets: [
